@@ -57,6 +57,7 @@ namespace MidTurm_BubblePlanet
                                 BallCollection(this);
                                 if (Singleton.Instance.SameBall.Count > 2)
                                 {
+                                    Singleton.Instance.Score += 50*Singleton.Instance.SameBall.Count;
                                     Singleton.Instance.SameBall.ForEach((obj) =>
                                     {
                                         Singleton.Instance.BallTable[obj.i, obj.j] = null;
@@ -96,13 +97,13 @@ namespace MidTurm_BubblePlanet
                                 BallCollection(Singleton.Instance.BallTable[Ball.i - 1, Ball.j+1]);
                     }
 
-                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j < 7)
+                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j <= 7)
                     {
                         if (Singleton.Instance.BallTable[Ball.i, Ball.j - 1] != null)
                             if (Singleton.Instance.BallTable[Ball.i, Ball.j - 1].color == Ball.color)
                                 BallCollection(Singleton.Instance.BallTable[Ball.i, Ball.j - 1]);
                     }
-                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j < 7)
+                    if (Ball.i >= 0 && Ball.j >= 0 && Ball.j < 7)
                     {
                         if (Singleton.Instance.BallTable[Ball.i, Ball.j + 1] != null)
                             if (Singleton.Instance.BallTable[Ball.i, Ball.j + 1].color == Ball.color)
@@ -136,13 +137,13 @@ namespace MidTurm_BubblePlanet
                             if (Singleton.Instance.BallTable[Ball.i - 1, Ball.j].color == Ball.color)
                                 BallCollection(Singleton.Instance.BallTable[Ball.i - 1, Ball.j]);
                     }
-                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j < 7)
+                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j <= 7)
                     {
                         if (Singleton.Instance.BallTable[Ball.i, Ball.j - 1] != null)
                             if (Singleton.Instance.BallTable[Ball.i, Ball.j - 1].color == Ball.color)
                                 BallCollection(Singleton.Instance.BallTable[Ball.i, Ball.j - 1]);
                     }
-                    if (Ball.i >= 0 && Ball.j > 0 && Ball.j < 7)
+                    if (Ball.i >= 0 && Ball.j >= 0 && Ball.j < 7)
                     {
                         if (Singleton.Instance.BallTable[Ball.i, Ball.j + 1] != null)
                             if (Singleton.Instance.BallTable[Ball.i, Ball.j + 1].color == Ball.color)

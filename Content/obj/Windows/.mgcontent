@@ -7,9 +7,17 @@
     <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/Arrow.png</File>
     <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/Ball.png</File>
     <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/BG.jpg</File>
+    <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/BG_GAMEOVER.png</File>
+    <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/FinalBar.png</File>
+    <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/font.spritefont</File>
     <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/GameScreen.png</File>
+    <File>D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/timerfont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

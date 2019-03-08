@@ -25,3 +25,7 @@ D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\obj\x86\Debug\MidTurm_Bub
 D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\obj\x86\Debug\MidTurm_BubblePlanet.csproj.CopyComplete
 D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\obj\x86\Debug\MidTurm_BubblePlanet.exe
 D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\obj\x86\Debug\MidTurm_BubblePlanet.pdb
+D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\bin\Windows\x86\Debug\Content\BG_GAMEOVER.xnb
+D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\bin\Windows\x86\Debug\Content\font.xnb
+D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\bin\Windows\x86\Debug\Content\timerfont.xnb
+D:\Work\GAME\MidTurm_BubblePlanet\MidTurm_BubblePlanet\bin\Windows\x86\Debug\Content\FinalBar.xnb

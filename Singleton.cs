@@ -12,6 +12,7 @@ namespace MidTurm_BubblePlanet
         public List<Ball> MidAirObjects = new List<Ball>();
         public Ball Bullet;
         public List<Ball> SameBall = new List<Ball>();
+        public int Score;
 
         private static readonly Lazy<Singleton> lazy = new Lazy<Singleton>(() => new Singleton());
         public static Singleton Instance { get { return lazy.Value; } }
