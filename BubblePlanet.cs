@@ -41,11 +41,19 @@ namespace MidTurm_BubblePlanet
 
         private void Start()
         {
+            Singleton.Instance.Bullet = new Ball(BallTexture)
+            {
+                Position = new Vector2(640-(BallTexture.Width* 0.18f) /2,650),
+                color = Utils.RandomColor(),
+                scale = 0.18f,
+            };
+
             arrow = new Arrow(ArrowTexture)
             {
-                Position = new Vector2(640, 600),
+                Position = new Vector2(640, 680),
                 scale = 1,
                 color = Color.White,
+                Origin = new Vector2(ArrowTexture.Width / 2, 100)
         };
 
             for (int i = 0; i < 2; i++)
@@ -54,7 +62,9 @@ namespace MidTurm_BubblePlanet
                 {
                     Singleton.Instance.BallTable[i, j] = new Ball(BallTexture)
                     {
-                        ball.Draw(spriteBatch),
+                        color = Utils.RandomColor(),
+                        Position = new Vector2((i%2 == 0? -8:13)+(1280 / 3) + (50 * j), 48 * i),
+                        scale = 0.18f,
                     };
                 }
             }
@@ -70,6 +80,11 @@ namespace MidTurm_BubblePlanet
                 Exit();
 
             arrow.Update(gameTime);
+            Singleton.Instance.Bullet.Update(gameTime);
+
+            Singleton.Instance.MidAirObjects.ForEach((Object) => {
+                Object.Update(gameTime);
+            });
 
             base.Update(gameTime);
         }
@@ -82,6 +97,19 @@ namespace MidTurm_BubblePlanet
             spriteBatch.Draw(GameScreen, new Rectangle(1280 / 3, 0, 1280 / 3, 720), Color.White);
 
             arrow.Draw(spriteBatch);
+            Singleton.Instance.Bullet.Draw(spriteBatch);
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Singleton.Instance.BallTable[i, j].Draw(spriteBatch);
+                }
+            }
+
+            Singleton.Instance.MidAirObjects.ForEach((Object)=> {
+                Object.Draw(spriteBatch);
+            });
 
             spriteBatch.End();
             base.Draw(gameTime);

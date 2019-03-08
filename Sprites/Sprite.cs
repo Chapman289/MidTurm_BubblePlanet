@@ -20,12 +20,14 @@ namespace MidTurm_BubblePlanet
         public float RotationVelocity = 3f;
         public float LinearVelocity = 10f;
         public Color color;
-        public bool IsRemoved = false;
+        public bool IsMidAir = false;
+
+        
 
         public Sprite(Texture2D texture)
         {
             Texture = texture;
-            Origin = new Vector2(texture.Width / 2, 100);
+            Origin = Vector2.Zero;
         }
 
         public virtual void Update(GameTime gameTime)

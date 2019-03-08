@@ -9,8 +9,8 @@ namespace MidTurm_BubblePlanet
     public class Singleton
     {
         public Ball[,] BallTable = new Ball[8, 8];
-        public List<Sprite> Objects = new List<Sprite>();
-
+        public List<Ball> MidAirObjects = new List<Ball>();
+        public Ball Bullet;
 
         private static readonly Lazy<Singleton> lazy = new Lazy<Singleton>(() => new Singleton());
         public static Singleton Instance { get { return lazy.Value; } }

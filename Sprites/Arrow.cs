@@ -46,7 +46,11 @@ namespace MidTurm_BubblePlanet
 
         private void FireBall()
         {
-            throw new NotImplementedException();
+            var temp = Singleton.Instance.Bullet.Clone() as Ball;
+            temp.Direction = Direction;
+            temp.IsMidAir = true;
+            Singleton.Instance.MidAirObjects.Add(temp);
+            Singleton.Instance.Bullet.color = Utils.RandomColor();
         }
     }
 }
