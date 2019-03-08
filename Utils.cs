@@ -33,7 +33,7 @@ namespace MidTurm_BubblePlanet
 
         public static bool Collision(Ball A,Ball B)
         {
-            return Vector2.Distance(A.Position, B.Position) < A.Texture.Width*0.18f;
+            return Vector2.Distance(A.Position, B.Position) < A.Texture.Width*0.2f;
         }
     }
 }

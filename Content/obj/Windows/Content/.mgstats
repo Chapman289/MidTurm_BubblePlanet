@@ -1,5 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/Arrow.png","D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/bin/Windows/Content/Arrow.xnb","TextureProcessor","Texture2DContent",2047,16085,0.3093014
-"D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/Ball.png","D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/bin/Windows/Content/Ball.xnb","TextureProcessor","Texture2DContent",63206,503565,0.0408864
+"D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/Ball.png","D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/bin/Windows/Content/Ball.xnb","TextureProcessor","Texture2DContent",60730,377081,0.1442088
 "D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/BG.jpg","D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/bin/Windows/Content/BG.xnb","TextureProcessor","Texture2DContent",88886,3686485,0.1200534
 "D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/GameScreen.png","D:/Work/GAME/MidTurm_BubblePlanet/MidTurm_BubblePlanet/Content/bin/Windows/Content/GameScreen.xnb","TextureProcessor","Texture2DContent",2917,1279285,0.044915

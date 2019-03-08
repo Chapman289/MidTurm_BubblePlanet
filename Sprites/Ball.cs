@@ -28,6 +28,39 @@ namespace MidTurm_BubblePlanet
                 {
                     Direction.X *= -1;
                 }
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if(Singleton.Instance.BallTable[i,j] != null)
+                        {
+                           if(Utils.Collision(this, Singleton.Instance.BallTable[i, j]))
+                            {
+                                var HitPoint = Position;
+                                HitPoint -= Singleton.Instance.BallTable[i, j].Position;
+                                Console.WriteLine(i + " " + j);
+                                if (HitPoint.X>=0 &&HitPoint.Y>=0)//TR
+                                {
+                                    Singleton.Instance.BallTable[i - 1, j] = this;
+                                    
+                                }
+                                else if(HitPoint.X<=0 &&HitPoint.Y>=0)
+                                {
+                                    Singleton.Instance.BallTable[i - 1, j] = this;
+                                }
+                                else if(HitPoint.X<=0 &&HitPoint.Y<=0)//DL
+                                {
+                                    Singleton.Instance.BallTable[i + 1, j] = this;
+                                }
+                                else if(HitPoint.X>=0 &&HitPoint.Y<=0)//DR
+                                {
+                                    Singleton.Instance.BallTable[i + 1, j] = this;
+                                }
+                               
+                            }
+                        }
+                    }
+                }
             }
         }
 

@@ -43,9 +43,9 @@ namespace MidTurm_BubblePlanet
         {
             Singleton.Instance.Bullet = new Ball(BallTexture)
             {
-                Position = new Vector2(640-(BallTexture.Width* 0.18f) /2,650),
+                Position = new Vector2(640 - ((BallTexture.Width*0.2f) / 2), 650),
                 color = Utils.RandomColor(),
-                scale = 0.18f,
+                scale = 0.2f,
             };
 
             arrow = new Arrow(ArrowTexture)
@@ -63,8 +63,8 @@ namespace MidTurm_BubblePlanet
                     Singleton.Instance.BallTable[i, j] = new Ball(BallTexture)
                     {
                         color = Utils.RandomColor(),
-                        Position = new Vector2((i%2 == 0? -8:13)+(1280 / 3) + (50 * j), 48 * i),
-                        scale = 0.18f,
+                        Position = new Vector2((i%2 == 0? 0:23)+(1280 / 3) + (50 * j), 50 * i),
+                        scale = 0.2f,
                     };
                 }
             }
