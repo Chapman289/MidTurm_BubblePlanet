@@ -63,8 +63,10 @@ namespace MidTurm_BubblePlanet
                     Singleton.Instance.BallTable[i, j] = new Ball(BallTexture)
                     {
                         color = Utils.RandomColor(),
-                        Position = new Vector2((i%2 == 0? 0:23)+(1280 / 3) + (50 * j), 50 * i),
+                        Position = new Vector2((i % 2 == 0 ? 0 : 23) + (1280 / 3) + (50 * j), 50 * i),
                         scale = 0.2f,
+                        i = i,
+                        j =j,
                     };
                 }
             }
@@ -99,16 +101,18 @@ namespace MidTurm_BubblePlanet
             arrow.Draw(spriteBatch);
             Singleton.Instance.Bullet.Draw(spriteBatch);
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 12; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    Singleton.Instance.BallTable[i, j].Draw(spriteBatch);
+                    if(Singleton.Instance.BallTable[i, j]!=null)
+                        Singleton.Instance.BallTable[i, j].Draw(spriteBatch);
                 }
             }
 
             Singleton.Instance.MidAirObjects.ForEach((Object)=> {
-                Object.Draw(spriteBatch);
+                if(Object.IsMidAir)
+                    Object.Draw(spriteBatch);
             });
 
             spriteBatch.End();
