@@ -11,7 +11,7 @@ namespace MidTurm_BubblePlanet
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        Ball[,] BallTable = new Ball[8, 8];
         public BubblePlanet()
         {
             graphics = new GraphicsDeviceManager(this);

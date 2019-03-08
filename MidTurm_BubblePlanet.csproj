@@ -45,6 +45,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="Sprites\Arrow.cs" />
+    <Compile Include="Sprites\Ball.cs" />
     <Compile Include="Sprites\Sprite.cs" />
   </ItemGroup>
   <ItemGroup>

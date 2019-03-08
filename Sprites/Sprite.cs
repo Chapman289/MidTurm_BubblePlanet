@@ -28,7 +28,7 @@ namespace MidTurm_BubblePlanet
             Origin = new Vector2(texture.Width / 2, 100);
         }
 
-        public virtual void Update(GameTime gameTime, List<Sprite> sprites)
+        public virtual void Update(GameTime gameTime)
         {
 
         }
