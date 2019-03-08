@@ -48,6 +48,7 @@
     <Compile Include="Sprites\Arrow.cs" />
     <Compile Include="Sprites\Ball.cs" />
     <Compile Include="Sprites\Sprite.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

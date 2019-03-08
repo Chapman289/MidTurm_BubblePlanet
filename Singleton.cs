@@ -8,6 +8,7 @@ namespace MidTurm_BubblePlanet
 {
     public class Singleton
     {
+        public Ball[,] BallTable = new Ball[8, 8];
         public List<Sprite> Objects = new List<Sprite>();
 
 
